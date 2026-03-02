@@ -1,0 +1,141 @@
+{
+    "student_metadata": {
+      "name": "Monu kumar",
+      "roll_number": "230113",
+      "course": "Advanced Machine Learning",
+      "exam": "Mid-Semester Examination",
+      "part": "Part A",
+      "submission_date": "2026-03-02"
+    },
+    "llm_tools_used": [
+      {
+        "tool_name": "deepseek",
+        "model": "deepseek-r1",
+        "provider": "deepseek"
+      }
+    ],
+    "full_llm_interaction_log": [
+      {
+        "interaction_id": 1,
+        "date": "2026-03-02",
+        "tool_name": "deepseek",
+        "model": "deepseek-r1",
+        "purpose": "To understand the exam requirements for Part A and get help selecting an appropriate research paper that meets all criteria.",
+        "prompt": "give me a research paper that meets the criteria in this PDF: CORE A* venue (2009-2012), method must be ARIMA/GMM/SVM, publicly available dataset, CPU-only feasible, not just a dataset paper. The paper should be easy to reproduce in 2 days.",
+        "llm_response_used": "Yes",
+        "how_it_helped": "The response provided multiple paper options and explained why the Felzenszwalb paper (Latent SVM, PAMI 2010) would be a good choice, but I needed to verify venue and availability.",
+        "student_verification": "I checked the CORE conference ranking website and confirmed that PAMI is indeed a CORE A* journal. I also verified the paper's year (2010) and that Latent SVM is a valid SVM variant.",
+        "confidence_level": 5
+      },
+      {
+        "interaction_id": 2,
+        "date": "2026-03-02",
+        "tool_name": "deepseek",
+        "model": "deepseek-r1",
+        "purpose": "To compare different paper options and understand which would be easiest to implement given my 2-day deadline.",
+        "prompt": "which one will be easy to do and have good impression - comparing Felzenszwalb DPM paper vs other SVM papers",
+        "llm_response_used": "Yes",
+        "how_it_helped": "The analysis showed that the Felzenszwalb paper has public code available, uses HOG features + SVM which are in scikit-learn, and has clear failure cases to discuss in Part C.",
+        "student_verification": "I checked the PASCAL VOC dataset website to confirm it's publicly downloadable. I also verified that HOG features are available in scikit-image documentation.",
+        "confidence_level": 5
+      },
+      {
+        "interaction_id": 3,
+        "date": "2026-03-02",
+        "tool_name": "deepseek",
+        "model": "deepseek-r1",
+        "purpose": "To find GMM+SVM combined papers from CORE A* venues as alternatives if my first choice was taken.",
+        "prompt": "find more research paper in coreA category with specific year 2009-2012 and it had all criteria mentioned in pdf - preferably combining GMM and SVM",
+        "llm_response_used": "Yes",
+        "how_it_helped": "The response provided Wang et al. (ICCV 2009) which combines GMM and SVM via Fisher Kernel, and Yang et al. (PAMI 2010) which also combines both methods.",
+        "student_verification": "I checked ICCV and PAMI on the CORE rankings website to confirm they are A* venues. I also looked up Caltech-101 dataset availability.",
+        "confidence_level": 4
+      },
+      {
+        "interaction_id": 4,
+        "date": "2026-03-02",
+        "tool_name": "deepseek",
+        "model": "deepseek-r1",
+        "purpose": "To verify if a specific paper I found (Zhu et al. CVPR 2010) meets all the exam criteria.",
+        "prompt": "[uploaded paper: Latent Hierarchical Structural Learning for Object Detection] Is the primary method SVM? Is venue CORE A*? Does it use public data?",
+        "llm_response_used": "Yes",
+        "how_it_helped": "The analysis confirmed this is a Latent Structural SVM paper from CVPR 2010 (CORE A*), uses PASCAL VOC public dataset, and runs on CPU in 8 seconds per image as per the paper.",
+        "student_verification": "I checked the CVPR 2010 proceedings and confirmed it's a top conference. I verified PASCAL VOC is publicly available. I read Section 4 where they mention 3Ghz CPU and 8 seconds per image.",
+        "confidence_level": 5
+      },
+      {
+        "interaction_id": 5,
+        "date": "2026-03-02",
+        "tool_name": "deepseek",
+        "model": "deepseek-r1",
+        "purpose": "To confirm the paper's primary contribution is methodological and uses public data for the final checks.",
+        "prompt": "Is the primary contribution of this paper methodological? Does the paper use publicly accessible data OR allow reproduction on a toy/synthetic dataset?",
+        "llm_response_used": "Yes",
+        "how_it_helped": "The response confirmed both answers are YES, with direct quotes from the paper showing iCCCP is the methodological contribution and PASCAL VOC is the public dataset.",
+        "student_verification": "I read Section 3.4 which introduces iCCCP as a new algorithm. I also confirmed Section 4 explicitly mentions PASCAL VOC 2007 dataset. The paper also shows they start with only 30 negative images, proving subsets work.",
+        "confidence_level": 5
+      },
+      {
+        "interaction_id": 6,
+        "date": "2026-03-02",
+        "tool_name": "deepseek",
+        "model": "deepseek-r1",
+        "purpose": "To get help crafting a good explanation for why I chose this paper for my submission.",
+        "prompt": "Why did you choose this paper? I did because I want to understand concept of svm in more detail and practical way - please enhance this answer",
+        "llm_response_used": "Partially",
+        "how_it_helped": "The response provided enhanced versions of my answer. I combined elements from multiple versions to create my own personalized explanation that truly reflects my learning goals.",
+        "student_verification": "I reviewed the paper's abstract and introduction to ensure my final explanation accurately reflects what the paper offers. I made sure my answer focuses on Latent SVM specifically, not just generic SVM.",
+        "confidence_level": 4
+      },
+      {
+        "interaction_id": 7,
+        "date": "2026-03-02",
+        "tool_name": "deepseek",
+        "model": "deepseek-r1",
+        "purpose": "To get help formatting this JSON file correctly according to the exam requirements.",
+        "prompt": "can you please help me to fill this out [JSON template] - I need to complete my LLM usage disclosure",
+        "llm_response_used": "Yes",
+        "how_it_helped": "The response is helping me structure this complete JSON file with all 7 interactions documented honestly based on our conversation history.",
+        "student_verification": "I am cross-checking each field against the exam PDF requirements (Page 5-7) to ensure the JSON structure matches exactly what is required.",
+        "confidence_level": 5
+      }
+    ],
+    "top_5_prompts": [
+      {
+        "rank": 1,
+        "interaction_id": 4,
+        "prompt": "[uploaded paper: Latent Hierarchical Structural Learning for Object Detection] Is the primary method SVM? Is venue CORE A*? Does it use public data?",
+        "why_important": "This was the most critical interaction because it confirmed that the specific paper I wanted to select (Zhu et al. CVPR 2010) actually meets ALL the exam criteria. The verification gave me confidence to proceed with submission."
+      },
+      {
+        "rank": 2,
+        "interaction_id": 2,
+        "prompt": "which one will be easy to do and have good impression - comparing Felzenszwalb DPM paper vs other SVM papers",
+        "why_important": "This helped me understand the trade-offs between different paper options. The analysis of code availability, library support, and failure cases helped me make an informed decision about which paper would be both feasible and impressive."
+      },
+      {
+        "rank": 3,
+        "interaction_id": 3,
+        "prompt": "find more research paper in coreA category with specific year 2009-2012 and it had all criteria mentioned in pdf - preferably combining GMM and SVM",
+        "why_important": "This gave me backup options (Wang et al. ICCV 2009, Yang et al. PAMI 2010) in case my first choice was taken. Having alternatives ready saved time and reduced stress about the first-come-first-serve selection process."
+      },
+      {
+        "rank": 4,
+        "interaction_id": 5,
+        "prompt": "Is the primary contribution of this paper methodological? Does the paper use publicly accessible data OR allow reproduction on a toy/synthetic dataset?",
+        "why_important": "These are the exact questions in the Google Form submission. Getting confirmation with direct quotes from the paper gave me confidence that my answers are correct and I won't be disqualified for wrong selection."
+      },
+      {
+        "rank": 5,
+        "interaction_id": 6,
+        "prompt": "Why did you choose this paper? I did because I want to understand concept of svm in more detail and practical way - please enhance this answer",
+        "why_important": "This helped me articulate my learning goals in a way that demonstrates genuine motivation while showing I understand what the paper offers (Latent SVM, not just basic SVM). The enhanced answer will make a better impression."
+      }
+    ],
+    "student_declaration": {
+      "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part A.",
+      "understanding_acknowledged": true,
+      "signature": "Monu kumar",
+      "date": "2026-03-02"
+    }
+  }
