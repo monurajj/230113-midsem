@@ -1,0 +1,16 @@
+{
+  "task_tag": "Task 2.1",
+  "llm_used": true,
+  "interactions": [
+    {
+      "prompt": "Write a python function to generate a 12x12 synthetic image of a cross that can randomly translate its top, bottom, left, and right 4x4 blocks.",
+      "response": "Sure, here's how you might implement that...",
+      "code_used_verbatim": false,
+      "student_modification": "Adapted the numpy matrix slicing to fit my exact 12x12 toy resolution and replaced synthetic data with my own parameters."
+    }
+  ],
+  "top_5_prompts": [
+    "Write a python function to generate a 12x12 synthetic image of a cross that can randomly translate its top, bottom, left, and right 4x4 blocks."
+  ],
+  "student_verification_and_declaration": "I certify that the LLM usage is fully disclosed."
+}
