@@ -1,0 +1,16 @@
+{
+  "task_tag": "Task 2.2",
+  "llm_used": true,
+  "interactions": [
+    {
+      "prompt": "Help me write a brute-force spatial dynamic programming loop for 4 parts inside a fixed bounding box to reproduce Eq 5 of the latent structural SVM paper.",
+      "response": "Sure, here's how you might implement that...",
+      "code_used_verbatim": false,
+      "student_modification": "Adapted the numpy matrix slicing to fit my exact 12x12 toy resolution and replaced synthetic data with my own parameters."
+    }
+  ],
+  "top_5_prompts": [
+    "Help me write a brute-force spatial dynamic programming loop for 4 parts inside a fixed bounding box to reproduce Eq 5 of the latent structural SVM paper."
+  ],
+  "student_verification_and_declaration": "I certify that the LLM usage is fully disclosed."
+}
